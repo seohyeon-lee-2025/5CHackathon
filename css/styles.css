@@ -1584,6 +1584,7 @@ box-shadow: 0 0 10px rgba(0,0,0,.5);
   display: block;
   font-size: .94118em;
   font-weight: 300;
+  text-align: center;
 }
 
 .contact-info a {
