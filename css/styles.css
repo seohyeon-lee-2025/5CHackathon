@@ -1,3 +1,5 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -38,13 +40,14 @@ html {
 .sticky{
   overflow:hidden;
   background-color:#09689E; 
-  /* margin-bottom:50px; */
+  margin-bottom:50px;
   width:100%; 
   color:white; 
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 0; 
 }
+
 
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -634,7 +637,7 @@ header:after {
   background-color: #f5faf9;
 }
 
-@media (min-width: 695px) {
+@media (min-width: 400) {
   .banner {
     display: block;
     background-size: cover;
@@ -650,9 +653,9 @@ header:after {
 
 .banner__img { width: 100%; }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .banner__img { display: none; }
-}
+} */
 
 .intro {
   padding: 3em 0 4em;
@@ -899,14 +902,14 @@ header:after {
 .session__desc {
   margin-top: 10px;
   overflow: hidden;
-  display: block;
+  display: none;
   font-size: .94118em;
   font-weight: 300;
 }
 
-/* @media (min-width: 695px) {
-  .session__desc { display: none; }
-} */
+@media (min-width: 695px) {
+  .session__desc { display: block; }
+}
 
 .session__desc > p { margin-bottom: .5em; }
 
@@ -1058,7 +1061,7 @@ header:after {
 }
 
 .companies {
-  padding: 2.5em 0 2em;
+  /* padding: 2.5em 0 2em; */
   background-color: white;
   text-align: center;
 }
@@ -1098,7 +1101,7 @@ header:after {
 }
 
 .hack-week {
-  padding: 2.25em 0 0;
+  padding: 2.25em 0;
   background-color: #eef7fa;
 }
 
@@ -1125,7 +1128,7 @@ header:after {
 }
 
 .hack-week__text {
-  font-size: 1.76471em;
+  /* font-size: 1.76471em; */
 }
 
 .hack-week__highlight {
@@ -1366,6 +1369,14 @@ header:after {
     width: 500px;
     height: 300px;
   }
+}
+
+.card {
+  margin-bottom: 10px;
+}
+
+.card#track {
+  min-height: 250px;
 }
 
 .section {
